@@ -89,6 +89,19 @@ public class Publisher
     }
 
     @Override
+    public String toString() {
+        return "Publisher{" +
+                "id=" + id +
+                ", Name='" + Name + '\'' +
+                ", Address='" + Address + '\'' +
+                ", City='" + City + '\'' +
+                ", State='" + State + '\'' +
+                ", Zip='" + Zip + '\'' +
+                ", books=" + books +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
